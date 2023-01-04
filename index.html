@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div id="loading">
+    <i class="fas fa-spinner spinner fa-spin fa-3x text-white"></i>
+    </div>
+
+    <div class="side-nav position-fixed top-0 left-0 h-100 d-flex">
+      <div
+        id="leftNav"
+        class="nav-left bg-black py-3 px-4 d-flex flex-column justify-content-between"
+      >
+        <ul class="list-unstyled text-white cursor">
+          <li onclick="showSearch()" class="position-relative list">Search</li>
+          <li onclick="getCategories()" class="position-relative list">
+            Categories
+          </li>
+          <li onclick="getArea()" class="position-relative list">Area</li>
+          <li onclick="getIngredients()" class="position-relative list">
+            Ingredients
+          </li>
+          <li onclick="showContacts()" class="position-relative list">Contact Us</li>
+        </ul>
+
+        <div class="nav-foot">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f pe-2 cursor"></i>
+            <i class="fa-brands fa-twitter pe-2 cursor"></i>
+            <i class="fas fa-globe cursor"></i>
+          </div>
+
+          <p class="rights text-white-50">
+            Copyright Â© 2019 All Rights<br />
+            Reserved.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="nav-right bg-light px-2 py-3 d-flex flex-column justify-content-between"
+      >
+        <div class="logo cursor">
+          <img src="logo.png" />
+        </div>
+
+        <div class="toggle-icon text-center">
+          <i class="fa fa-align-justify cursor"></i>
+        </div>
+
+        <div class="icons mx-auto">
+          <i class="fas fa-globe d-block cursor"></i>
+          <i class="fas fa-share-alt pt-2 cursor"></i>
+        </div>
+      </div>
+    </div>
+
+    <section id="search">
+      <div class="container w-75" id="searchContainer">
+       
+       
+      </div>
+    </section> 
+
+    <section id="meals ">
+      <div id="innerLoading">
+        <i class="fas fa-spinner spinner fa-spin fa-3x text-white"></i>
+      </div>
+      <div class="container py-5">
+        <div id="row" class="row g-4">
+       
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

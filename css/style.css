@@ -1,0 +1,154 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0D0D0D;
+    overflow: hidden;
+}
+
+ .cursor {
+    cursor: pointer;
+}
+
+#loading, #innerLoading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading{
+    z-index: 999;
+    background-color: black;
+}
+
+#innerLoading{
+    z-index: 9;
+    background-color: #0D0D0D;
+}
+
+.side-nav{
+    z-index: 99;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.icons {
+    font-size: 17px;
+}
+
+.fa-align-justify, .fa-x{
+    font-size: 23px;
+}
+
+.list {
+    line-height: 48px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.rights {
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 100;
+    letter-spacing: .7px;
+}
+
+.meal {
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.meal .layer {
+    background-color: rgb(255, 255, 255, .7);
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s linear;
+    
+}
+.meal:hover .layer{  
+top: 0;
+}
+
+input {
+    background-color: transparent !important;
+    caret-color: white;
+    color: white; 
+    border-radius: none !important;
+    border: none !important; 
+    transition: .3s linear;
+}
+
+#search input {
+    border-bottom: 1px solid yellow !important;
+}
+
+#search input:focus{
+    box-shadow: none !important;
+    outline: none;
+    transform: scale(1.03);
+}
+
+#contact input {
+    border-radius: 5px;
+    box-shadow:  1px 1px 3px #ffffff3d;
+}
+
+#contact input:focus{
+    outline: none;
+
+}
+
+#contact #mybtn:hover{
+color: #fff;
+}
+
+
+ .meal {
+    box-shadow:  3px 3px 8px rgba(0, 0, 0, 0.25),  -3px -3px 8px rgba(0, 0, 0, 0.25);  
+}
+
+
+.main-txt {
+    color: #6E9E3A;
+}
+
+.shady {
+    box-shadow:  3px 0px 8px rgba(0, 0, 0, 0.25), -3px 0px 8px rgba(0, 0, 0, 0.25) ;
+}
+
+.area-icon{
+    color: #9E403A;
+} 
+
+.recipe{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.alert{
+    width: fit-content;
+}
+
+#submitBtn:hover,
+#submitBtn:focus{
+color: white;
+}
